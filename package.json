@@ -1,0 +1,19 @@
+{
+  "name": "public-project",
+  "version": "1.0.0",
+  "description": "This is a test project for publicly accessible version.helsinki.fi things.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@version.helsinki.fi:tommi.tuura/public-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  }
+}

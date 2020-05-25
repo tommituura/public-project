@@ -9,5 +9,5 @@ ADD run.sh .
 
 RUN npm install --only-production
 
-ENTRYPOINT ["node", "run.sh"]
+ENTRYPOINT ["node", "/usr/src/app/server.js"]
 

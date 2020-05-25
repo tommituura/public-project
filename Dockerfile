@@ -4,8 +4,10 @@ WORKDIR /usr/src/app
 
 ADD package.json .
 ADD package-lock.json .
-ADD server.js
-ADD run.sh
+ADD server.js .
+ADD run.sh .
+
+RUN npm install --only-production
 
 ENTRYPOINT ["node", "run.sh"]
 

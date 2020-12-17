@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/nodejs-14
+# FROM registry.access.redhat.com/ubi8/nodejs-14
+FROM node:lts-buster
 
 WORKDIR /usr/src/app
 

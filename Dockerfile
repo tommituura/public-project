@@ -7,8 +7,8 @@ ADD package.json .
 ADD package-lock.json .
 ADD server.js .
 
-RUN chgrp -R 0 /usr/src/app && chmod -R +rwX /usr/src/app
-USER 1001
+# RUN chgrp -R 0 /usr/src/app && chmod -R +rwX /usr/src/app
+# USER 1001
 
 RUN npm install --only-production
 

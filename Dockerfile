@@ -2,6 +2,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-14
 # FROM node:lts-buster
 
 WORKDIR /usr/src/app
+RUN chmod +rwx /usr/src/app
 
 ADD package.json .
 ADD package-lock.json .

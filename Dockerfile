@@ -7,9 +7,9 @@ ADD package.json .
 ADD package-lock.json .
 ADD server.js .
 
-RUN npm install --only-production
-
-RUN chown -R 1001:0 /usr/src/app
+RUN chgrp -R 0 /usr/src/app && chmod -R +rwX /usr/src/app
 USER 1001
+
+RUN npm install --only-production
 
 ENTRYPOINT ["node", "/usr/src/app/server.js"]

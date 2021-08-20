@@ -4,6 +4,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-14
 WORKDIR /usr/src/app
 USER 0:0
 RUN chmod +rwx /usr/src/app
+USER 1001:0
 
 ADD package.json .
 ADD package-lock.json .
